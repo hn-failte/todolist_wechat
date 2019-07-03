@@ -1,4 +1,2 @@
 // pages/discover/discover.js
-Page({
-
-})
+Page({})

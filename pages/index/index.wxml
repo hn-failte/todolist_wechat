@@ -1,4 +1,30 @@
-<!--index.wxml-->
-<view class="container">
-  <text>index</text>
+<!--pages/discover/discover.wxml-->
+<view class='{{"header "+(modifyMode?"modify":"")}}'>
+  <view class='title'>ToDoList</view>
+  <view class='userinfo'>
+    <text class='notice'>姓名</text>
+    <input value='{{name}}' wx:key="name_view" id='name' bindinput='handleChange' class='userinput'>
+    </input>
+  </view>
+  <view class='userinfo'>
+    <text class='notice'>年龄</text>
+    <input value='{{age}}' wx:key="age_view" id='age' bindinput='handleChange' class='userinput'></input>
+  </view>
+  <view class='userinfo'>
+    <text class='notice'>职业</text>
+    <input value='{{job}}' wx:key="job_view" id='job' bindinput='handleChange' class='userinput'></input>
+  </view>
+  <button class='confirm' catchtap='handleSubmit'>提交</button>
+</view>
+<view class='content'>
+  <view class='title'>Tasks</view>
+  <ul class="list" wx:for="{{arr}}" wx:key="*this.id">
+    <li>{{item.name}}</li>
+    <li>{{item.age}}</li>
+    <li>{{item.job}}</li>
+    <li>
+      <a catchtap="handleDelete" data-id="{{index}}">Del</a>
+      <a catchtap="changeMode" data-id="{{index}}">Modify</a>
+    </li>
+  </ul>
 </view>

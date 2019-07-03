@@ -10,7 +10,7 @@
     "backgroundTextStyle": "dark",
     "onReachBottomDistance": 50,
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "wechat",
+    "navigationBarTitleText": "ToDoList",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

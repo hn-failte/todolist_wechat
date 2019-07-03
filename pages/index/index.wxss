@@ -1,1 +1,61 @@
-/**index.wxss**/
+/* pages/discover/discover.wxss */
+
+.header {
+  padding: 50rpx 0;
+  width: 750rpx;
+  background: #eee;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.modify {
+  border: 1px solid orangered;
+}
+
+.title {
+  text-align: center;
+  background: orange;
+}
+
+.userinfo {
+  margin: 50rpx auto;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.notice {
+  text-align: left;
+  width: 200rpx;
+}
+
+.userinput {
+  width: 375rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: 24rpx;
+  background: #fefefe;
+}
+
+.confirm {
+  width: 200rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: 24rpx;
+}
+
+.content {
+  width: 100%;
+  background: #2e3c5f;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  color: #fff;
+}
+
+.list li {
+  text-align: center;
+  width: 33.33%;
+}

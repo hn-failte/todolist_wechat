@@ -1,0 +1,15 @@
+<!--pages/more/more.wxml-->
+<wxs src="../../utils/utils.wxs" module="util"></wxs>
+<view>
+  <text>{{link}}</text>
+</view>
+<view class="list">
+  <view class='item' wx:for='{{arr}}' wx:key='{{index}}' data-id="{{item.id}}" catchtap='getDetail'>
+    <image src='{{item.cover.url}}' />
+    <view class='name'>{{item.title}}</view>
+    <view class='score'>
+      <text wx:for='{{5}}' wx:for-item='iter' wx:for-index='idx' class='{{util.fillStar(idx, item.rating.value)}}' wx:key='{{idx}}'>★</text>
+      <text> {{item.rating.value}} </text>
+    </view>
+  </view>
+</view>

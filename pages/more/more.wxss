@@ -1,0 +1,31 @@
+/* pages/more/more.wxss */
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  padding: 0 25rpx;
+  width: 200rpx;
+  height: 390rpx;
+}
+.item>image{
+  height: 300rpx;
+  width: 200rpx;
+}
+.name{
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.score{
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  width: 90%;
+}

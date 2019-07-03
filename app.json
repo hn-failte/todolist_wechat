@@ -2,15 +2,16 @@
   "pages": [
     "pages/index/index",
     "pages/discover/discover",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/more/more"
   ],
   "window": {
-    "enablePullDownRefresh": true,
     "backgroundColor": "#ccc",
     "backgroundTextStyle": "dark",
     "onReachBottomDistance": 50,
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "wechat",
+    "navigationBarTitleText": "豆瓣",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

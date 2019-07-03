@@ -1,4 +1,28 @@
 <!--index.wxml-->
-<view class="container">
-  <text>index</text>
+<wxs src="../../utils/utils.wxs" module="util"></wxs>
+<view class='header'>
+  <icon type="search"></icon>
+  <input class='input'></input>
+</view>
+<view class="content">
+  <block wx:for="{{3}}" wx-item="blockItem" wx-item="blockIndex" wx:key='{{blockIndex}}'>
+    <view class='block'>
+      <view class='top'>
+        <text>{{name}}</text>
+        <text data-link='{{moreUrl}}' catchtap='getMore'>更多</text>
+      </view>
+      <scroll-view style='height: 390rpx' scroll-x>
+        <view class='bottom'>
+          <view class='item' wx:for='{{arr}}' wx:key='{{index}}' data-id="{{item.id}}" catchtap='getDetail'>
+            <image src='{{item.cover.url}}' />
+            <view class='name'>{{item.title}}</view>
+            <view class='score'>
+              <text wx:for='{{5}}' wx:for-item='iter' wx:for-index='idx' class='{{util.fillStar(idx, item.rating.value)}}' wx:key='{{idx}}'>★</text>
+              <text> {{item.rating.value}} </text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </block>
 </view>

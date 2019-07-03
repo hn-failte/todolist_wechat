@@ -1,0 +1,7 @@
+var fillStar = function (index, iter) {
+  return index < Math.ceil(iter / 2) ? "starFill" : "star"
+}
+
+module.exports = {
+  fillStar: fillStar
+}

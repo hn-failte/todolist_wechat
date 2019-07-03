@@ -1,1 +1,68 @@
 /**index.wxss**/
+.header{
+  margin: 0 auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 80%;
+  display: flex;
+  padding: 20rpx;
+  background: #f7f7f7;
+  border-radius: 10rpx;
+}
+.search{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.input{
+  padding-left: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.block{
+  height: 450rpx;
+}
+.top{
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.bottom{
+  height: 390rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.item{
+  padding: 0 10rpx;
+  width: 200rpx;
+  height: 390rpx;
+}
+.item>image{
+  height: 300rpx;
+  width: 200rpx;
+}
+.name{
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.score{
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  width: 90%;
+}
+.star{
+  color: #ccc;
+}
+.starFill{
+  color: orange;
+}

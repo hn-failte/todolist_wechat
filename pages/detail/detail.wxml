@@ -1,0 +1,4 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <text>{{id}}</text>
+</view>

@@ -9,7 +9,7 @@
     <view class='name'>{{item.title}}</view>
     <view class='score'>
       <text wx:for='{{5}}' wx:for-item='iter' wx:for-index='idx' class='{{util.fillStar(idx, item.rating.value)}}' wx:key='{{idx}}'>★</text>
-      <text> {{item.rating.value}} </text>
+      <text> {{util.rankScore(item.rating.value)}} </text>
     </view>
   </view>
 </view>

@@ -13,7 +13,8 @@ Page({
       success: this.getData.bind(this)
     })
   },
-  getData(res){
+  getData(res) {
+    console.log("index/getData", res)
     this.setData({
       name: res.data.subject_collection.name,
       moreUrl: res.data.subject_collection.url,
@@ -25,7 +26,7 @@ Page({
     wx.navigateTo({
       url: '/pages/detail/detail?id='+id,
       success: function(){
-        console.log("success")
+        console.log("navigateTo detail")
       }
     })
   },
@@ -34,7 +35,7 @@ Page({
     wx.navigateTo({
       url: "/pages/more/more?link="+link,
       success(){
-        console.log("success")
+        console.log("navigateTo more")
       }
     })
   }

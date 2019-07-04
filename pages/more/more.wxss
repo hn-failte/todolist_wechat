@@ -29,3 +29,9 @@
   font-size: 24rpx;
   width: 90%;
 }
+.star{
+  color: #ccc;
+}
+.starFill{
+  color: orange;
+}

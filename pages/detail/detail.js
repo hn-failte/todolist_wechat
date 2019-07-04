@@ -8,6 +8,9 @@ Page({
   onLoad: function (options) {
     this.setData({
       id: options.id
+    }),
+    wx.setNavigationBarTitle({
+      title: "详情"
     })
   },
 

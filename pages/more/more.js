@@ -7,8 +7,10 @@ Page({
   },
 
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: '更多',
+    })
     let link = options.link
-    console.log(options)
     this.setData({
       link: link
     })
@@ -20,6 +22,7 @@ Page({
   },
 
   getList(res){
+    console.log("more/getList", res)
     this.setData({
       arr: res.data.subject_collection_items
     })
@@ -31,7 +34,7 @@ Page({
     wx.navigateTo({
       url: '/pages/detail/detail?id=' + id,
       success: function () {
-        console.log("success")
+        console.log("navigate detail")
       }
     })
   }

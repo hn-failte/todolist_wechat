@@ -1,7 +1,13 @@
 var fillStar = function (index, iter) {
-  return index < Math.ceil(iter / 2) ? "starFill" : "star"
+  console.log(index, iter)
+  if(!iter) return "star"
+  else return index < Math.ceil(iter / 2) ? "starFill" : "star"
 }
-
+var rankScore = function(score){
+  if(!score) return "N/A"
+  return score+"分"
+}
 module.exports = {
-  fillStar: fillStar
+  fillStar: fillStar,
+  rankScore: rankScore
 }

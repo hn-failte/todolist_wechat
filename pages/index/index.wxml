@@ -1,4 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  <text>index</text>
+  <button open-type='getUserInfo' bindgetuserinfo='getUserInfo'>用户授权</button>
+  <button open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>getPhoneNumber</button>.
+  <button catchtap='handleClick1'>获取用户信息</button>
+  <button catchtap='handleClick2'>获取通讯地址</button>
+  <button catchtap='handleClick3'>获取精确位置</button>
 </view>
